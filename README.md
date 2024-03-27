@@ -1,3 +1,6 @@
+# TodoList
+## Backend - [https://todo-list-bice-xi-29.vercel.app/](https://todo-list-bice-xi-29.vercel.app/)
+## Frontend - [https://todo-list-frontend-ashy.vercel.app/](https://todo-list-frontend-ashy.vercel.app/)
 # ToDoList App - Backend
 
 This repository contains the backend codebase for the ToDoList application. The backend is responsible for handling data storage, user authentication, and managing tasks.
