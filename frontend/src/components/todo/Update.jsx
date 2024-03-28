@@ -16,7 +16,7 @@ const Update = ({ display, update }) => {
 
   const submit = async () => {
     try {
-      await axios.put(`https://taskmanagementbackend-production-9dd5.up.railway.app/api/tasks/${update._id}`, Inputs, {
+      await axios.put(`https://todo-list-bice-xi-29.vercel.app/users/tasks/${update._id}`, Inputs, {
         headers: {
           'Content-Type': 'application/json',
           Authorization: `Bearer ${localStorage.getItem('token')}`

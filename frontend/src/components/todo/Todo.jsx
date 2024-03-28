@@ -38,7 +38,7 @@ const Todo = () => {
   useEffect(() => {
     const fetchTasks = async () => {
       try {
-        const response = await axios.get('https://taskmanagementbackend-production-9dd5.up.railway.app/api/tasks', {
+        const response = await axios.get('https://todo-list-bice-xi-29.vercel.app/users/tasks', {
           headers: {
             Authorization: `Bearer ${localStorage.getItem('token')}`
           }
@@ -54,7 +54,7 @@ const Todo = () => {
 
   const createTask = async () => {
     try {
-      const response = await axios.post('https://taskmanagementbackend-production-9dd5.up.railway.app/api/tasks', Inputs, {
+      const response = await axios.post('https://todo-list-bice-xi-29.vercel.app/users/tasks', Inputs, {
         headers: {
           'Content-Type': 'application/json',
           Authorization: `Bearer ${localStorage.getItem('token')}`
@@ -69,7 +69,7 @@ const Todo = () => {
 
   const deleteTask = async (taskId) => {
     try {
-      await axios.delete(`https://taskmanagementbackend-production-9dd5.up.railway.app/api/tasks/${taskId}`, {
+      await axios.delete(`https://todo-list-bice-xi-29.vercel.app/users/tasks/${taskId}`, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem('token')}`
         }

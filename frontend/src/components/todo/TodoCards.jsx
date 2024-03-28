@@ -7,7 +7,7 @@ import axios from "axios";
 const TodoCards = ({ title, description, id, delid , display, updateId, toBeUpdate,}) => {
   const deleteTask = async () => {
     try {
-      await axios.delete(`https://taskmanagementbackend-production-9dd5.up.railway.app/api/tasks/${id}`, {
+      await axios.delete(`https://todo-list-bice-xi-29.vercel.app/users/tasks/${id}`, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem('token')}`
         }

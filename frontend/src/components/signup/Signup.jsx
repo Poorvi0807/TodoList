@@ -37,7 +37,7 @@ const Signup = () => {
     //     }
     //   });
       try {
-        const response = await axios.post(`https://taskmanagementbackend-production-9dd5.up.railway.app/api/auth/register`, Inputs);
+        const response = await axios.post(`https://todo-list-bice-xi-29.vercel.app/users/auth/register`, Inputs);
         // const data = await response;
         console.log(response);
         setInputs({ email: "", username: "", password: "", age : 1, about : ""});
